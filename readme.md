@@ -43,7 +43,7 @@ Add:
 ```
 "whitenoise.middleware.WhiteNoiseMiddleware",
 ```
-At the top:
+At the top in INSTALLED_APPS:
 ```
 "whitenoise.runserver_nostatic",
 ```
@@ -60,7 +60,7 @@ Edit `settings.py`:
 
 ```
 ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
-CSRF_TRUSTED_ORIGINS = ["https://api-project-name.onrender.com", "https://*.127.0.0.1"]
+CSRF_TRUSTED_ORIGINS = ["https://api-project-name.com", "https://*.127.0.0.1"]
 ```
 
 ### 8️⃣ Configure Static Files
